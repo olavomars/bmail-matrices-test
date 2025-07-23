@@ -1,4 +1,4 @@
-import { EmailThread } from "@/types/email";
+import { EmailThread, Email } from "@/types/email";
 import { EMAIL_PREVIEW_MAX_LENGTH } from "./constants";
 
 export function getLastEmail(thread: EmailThread) {
@@ -49,4 +49,18 @@ export function getSenderDisplayName(thread: EmailThread): string {
   const lastEmail = getLastEmail(thread);
   const emailCount = getEmailCount(thread);
   return `${lastEmail.from.name} ${emailCount || ""}`.trim();
+}
+
+export function formatRecipients(recipients: Email["to"]): string {
+  if (recipients.length === 1) {
+    return recipients[0].name;
+  } else if (recipients.length === 2) {
+    return `${recipients[0].name} and ${recipients[1].name}`;
+  } else {
+    return `${recipients[0].name} and ${recipients.length - 1} others`;
+  }
+}
+
+export function getRecipientsTooltip(recipients: Email["to"]): string {
+  return recipients.map((r) => `${r.name} <${r.email}>`).join(", ");
 }

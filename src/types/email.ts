@@ -9,7 +9,7 @@ export interface Email {
   to: {
     name: string;
     email: string;
-  };
+  }[];
   subject: string;
   body: string;
   timestamp: Date;
@@ -23,6 +23,7 @@ export interface Email {
 export interface EmailThread {
   id: string;
   subject: string;
+  participants: string[];
   isSpam?: boolean;
   emails: Email[];
   lastActivity: Date;

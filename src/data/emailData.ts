@@ -19,10 +19,12 @@ export const emails: Email[] = [
       email: "noreply@bmail.com",
       avatar: "GT",
     },
-    to: {
-      name: "Me",
-      email: "me@example.com",
-    },
+    to: [
+      {
+        name: "Me",
+        email: "me@example.com",
+      },
+    ],
     subject: "Welcome to Bmail",
     body: "Welcome to BMail! Your account is all set up and ready to go. Start exploring our features.",
     timestamp: createDate(0, 5),
@@ -38,10 +40,20 @@ export const emails: Email[] = [
       name: "Lisa AWang",
       email: "lisa.wang@company.com",
     },
-    to: {
-      name: "Me",
-      email: "me@example.com",
-    },
+    to: [
+      {
+        name: "Me",
+        email: "me@example.com",
+      },
+      {
+        name: "David Kim",
+        email: "david.kim@company.com",
+      },
+      {
+        name: "Sarah Johnson",
+        email: "sarah.johnson@company.com",
+      },
+    ],
     subject: "Re: Project deadline reminder",
     body: "Hi team, just a reminder that our project deadline is this Friday. Please submit your final reports.",
     timestamp: createDate(1),
@@ -56,10 +68,16 @@ export const emails: Email[] = [
       name: "David Kim",
       email: "david.kim@company.com",
     },
-    to: {
-      name: "Me",
-      email: "me@example.com",
-    },
+    to: [
+      {
+        name: "Me",
+        email: "me@example.com",
+      },
+      {
+        name: "Lisa AWang",
+        email: "lisa.wang@company.com",
+      },
+    ],
     subject: "Re: Project deadline reminder",
     body: "Thanks Lisa! I'll have my section ready by Thursday afternoon.",
     timestamp: createDate(1),
@@ -75,10 +93,12 @@ export const emails: Email[] = [
       name: "Sarah Johnson",
       email: "sarah.johnson@company.com",
     },
-    to: {
-      name: "Me",
-      email: "me@example.com",
-    },
+    to: [
+      {
+        name: "Me",
+        email: "me@example.com",
+      },
+    ],
     subject: "Re: Team meeting tomorrow",
     body: "Yes, please bring the Q4 reports. Also, let's discuss the new project timeline.",
     timestamp: createDate(1),
@@ -95,10 +115,12 @@ export const emails: Email[] = [
       email: "alex.rivera@bmail.com",
       avatar: "AR",
     },
-    to: {
-      name: "Me",
-      email: "me@example.com",
-    },
+    to: [
+      {
+        name: "Me",
+        email: "me@example.com",
+      },
+    ],
     subject: "Re: Dinner plans this weekend?",
     body: "Hey! Want to try that new Italian place downtown this Saturday?",
     timestamp: createDate(1, 15),
@@ -115,10 +137,12 @@ export const emails: Email[] = [
       email: "me@example.com",
       avatar: "Y",
     },
-    to: {
-      name: "Alex Rivera",
-      email: "alex.rivera@bmail.com",
-    },
+    to: [
+      {
+        name: "Alex Rivera",
+        email: "alex.rivera@bmail.com",
+      },
+    ],
     subject: "Re: Dinner plans this weekend?",
     body: "Sounds great! What time works for you?",
     timestamp: createDate(2, 4),
@@ -135,10 +159,12 @@ export const emails: Email[] = [
       email: "alex.rivera@bmail.com",
       avatar: "AR",
     },
-    to: {
-      name: "Me",
-      email: "me@example.com",
-    },
+    to: [
+      {
+        name: "Me",
+        email: "me@example.com",
+      },
+    ],
     subject: "Re: Dinner plans this weekend?",
     body: "How about 7 PM? I'll make a reservation for us.",
     timestamp: createDate(2, 2),
@@ -154,10 +180,12 @@ export const emails: Email[] = [
       name: "Tech News",
       email: "newsletter@technews.com",
     },
-    to: {
-      name: "Me",
-      email: "me@example.com",
-    },
+    to: [
+      {
+        name: "Me",
+        email: "me@example.com",
+      },
+    ],
     subject: "Newsletter: Weekly updates",
     body: "Here are this week's top tech stories and updates from around the industry.",
     timestamp: createDate(2),
@@ -173,10 +201,12 @@ export const emails: Email[] = [
       name: "Suspicious Sender",
       email: "noreply@suspicious.com",
     },
-    to: {
-      name: "Me",
-      email: "me@example.com",
-    },
+    to: [
+      {
+        name: "Me",
+        email: "me@example.com",
+      },
+    ],
     subject: "Congratulations! You've won!",
     body: "Click here to claim your prize!",
     timestamp: createDate(3),
@@ -192,10 +222,12 @@ export const emails: Email[] = [
       email: "newsletter@library.org",
       avatar: "LL",
     },
-    to: {
-      name: "Me",
-      email: "me@example.com",
-    },
+    to: [
+      {
+        name: "Me",
+        email: "me@example.com",
+      },
+    ],
     subject: "Monthly newsletter",
     body: "Check out our new arrivals and upcoming events this month at your local library.",
     timestamp: createDate(0, 30),
@@ -211,10 +243,12 @@ export const emails: Email[] = [
       email: "billing@streamingservice.com",
       avatar: "S",
     },
-    to: {
-      name: "Me",
-      email: "me@example.com",
-    },
+    to: [
+      {
+        name: "Me",
+        email: "me@example.com",
+      },
+    ],
     subject: "Your subscription is expiring",
     body: "Your monthly subscription will expire in 3 days. Renew now to continue enjoying our content.",
     timestamp: createDate(0, 44),
@@ -230,10 +264,16 @@ export const emails: Email[] = [
       email: "info@outdoorclub.org",
       avatar: "OC",
     },
-    to: {
-      name: "Me",
-      email: "me@example.com",
-    },
+    to: [
+      {
+        name: "Me",
+        email: "me@example.com",
+      },
+      {
+        name: "Adventure Team",
+        email: "team@outdoorclub.org",
+      },
+    ],
     subject: "Weekend hiking trip",
     body: "Join us this Saturday for a scenic hike at Blue Mountain Trail. All skill levels welcome!",
     timestamp: createDate(0, 46),

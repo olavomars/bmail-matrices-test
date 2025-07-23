@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/tooltip";
 import { Star, StarOff } from "lucide-react";
 import { formatEmailDetailTimestamp } from "@/lib/date-utils";
+import { formatRecipients, getRecipientsTooltip } from "@/lib/email-utils";
 
 interface EmailItemProps {
   email: Email;
@@ -52,7 +53,18 @@ function EmailItemComponent({
           </div>
 
           {isExpanded && (
-            <div className="text-sm text-gray-500">to {email.to.name}</div>
+            <div className="text-sm text-gray-500">
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <span className="cursor-help">
+                    to {formatRecipients(email.to)}
+                  </span>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>{getRecipientsTooltip(email.to)}</p>
+                </TooltipContent>
+              </Tooltip>
+            </div>
           )}
 
           <div className="pl-13 mt-2">
