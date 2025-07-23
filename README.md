@@ -37,7 +37,7 @@ The goal was to perfectly replicate all of BMail's behavior, focusing on identic
 
    ```bash
    git clone <repository-url>
-   cd clone-mail-zen
+   cd bmail-matrices-test
    ```
 
 2. **Install dependencies**
